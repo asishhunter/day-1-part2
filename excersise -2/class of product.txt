@@ -1,0 +1,37 @@
+using System;
+
+namespace product
+{
+	public class Product
+	{
+		internal int productId;
+        internal string productName;
+        internal double price;
+        internal string color;
+	    internal string specs;
+
+
+        internal void Display()
+        {
+            Console.WriteLine("ID:" + productId + " " + productName + "-" + price + " " + color+ " "+ specs);
+        }
+    }
+	
+	class Program
+	{
+		public void main(string[] args)
+		{
+			Product product1;
+			product1 = new Product(); 
+			
+			
+			product1.productId = 1431;
+			product1.productName = "lappy";
+			product1.price = 99999;
+			product1.color = "solid metal black";
+			product1.specs = "12gb ram + 2tb disk";
+
+			product1.Display();
+		}
+	}
+} 
